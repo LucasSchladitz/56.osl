@@ -15,7 +15,7 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="includeHTML();">
     <div class="container">
         <header>
             <div class="card bg-dark text-white">
@@ -28,7 +28,7 @@
             </p>
             <nav class="navbar navbar-expand-lg bg-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Termine</a>
+                    <a class="navbar-brand" href="#" id="title">Startseite</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="./index.html"> Startseite</a>
+                                <a class="nav-link" href="#" onclick="navigate(this)" data-file="./termine.html" data-title="Termine">Termine</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./elterninfo.html">Elterninformation</a>
@@ -117,125 +117,17 @@
                         </button>
                     </div>
                 </div>
+            </div>
 
-            </div>
-            <div class="col py-4">
-                <h1 id="text">termine 2021/22</h1>
-               
-                   
-                        <h4>Erster Elternabend im neuen Schuljahr</h4>
-                   
-                    <ul>
-                        <li>27.9./28.9.2021 6-10</li>
-                    </ul>
-                  
-                        <h4>Herbstferien</h4>
-                    
-                    <ul>
-                        <li>18.10.2021 - 29.10.2021</li>
-                    </ul>
-                    
-                        <h4>Unterichtsfreie Tage</h4>
-                    
-                    <ul>
-                        <li>Freitag 3.12.2021</li>
-                        <li>Freitag 27.5.2022</li>
-                    </ul>
-                    
-                        <h4> weihnachtsferien</h4>
-                  
-                    <ul>
-                        <li>23.12.2021 - 31.12.2021</li>
-                    </ul>
-                    
-                        <h4>Ausgabe der Halbjahresinformation</h4>
-                  
-                    <ul>
-                        <li>11.02.2022</li>
-                    </ul>
-                    
-                        <h4>Winterferien</h4>
-                    
-                    <ul>
-                        <li>14.02.2022 – 25.02.2022</li>
-                    </ul>
-                  
-                        <h4>Anmeldezeitraum für die neuen Schüler Klasse 5</h4>
-                    
-                    <ul>
-                        <li>28.02.2022 – 04.03.2022 (gesondertes Verfahren)</li>
-                    </ul>
-                
-                        <h4>Ostrerferien</h4>
-                  
-                    <ul>
-                        <li>15.04.2022 – 22.04.2022</li>
-                    </ul>
-                  
-                        <h4>Schülerbetriebspraktika</h4>
-                  
-                    <ul>
-                        <li>13.12.2021 – 17.12.2021; Zusatzpraktikum Klasse 9HS</li>
-                        <li>13.12.2021 – 22.12.2021; Zusatzpraktikum Klasse 10
-                        </li>
-                        <li>07.06.2022 – 17.06.2022 Klassenstufe 7
-                            Werkstatttage im Zentrum für Aus- und Weiterbildung Leipzig GmbH</li>
-                        <li>20.06.2022 – 01.07.2022, Klassenstufe 8
-                        </li>
-                        <li>09.05.2022 – 20.05.2022, Klassenstufe 9RS
-                        </li>
-                    </ul>
-                   
-                        <h4>Elternabende</h4>
-                    
-                    <ul>
-                        <li> <strong> Montag, 01.11.2021,</strong> Informationselternabend für die Klassenstufe 7 zur
-                            Berufsorientierung</li>
-                        <li> <strong>Dienstag, 05.07.2022,</strong> Elternabend der künftigen Klassen 5</li>
-                    </ul>
-                  
-                        <h4>Lehrersprechtage jeweils von 17:00 uhr bis 19:00 uhr</h4>
-                   
-                    <ul>
-                        <li>Montag, 29.11.2021
-                        </li>
-                        <li>Montag, 16.05.2022
-                        </li>
-                    </ul>
-                  
-                        <h4>Kompetenztests</h4>
-                 
-                    <ul>
-                        <li><strong>1.3.2022</strong> Deutsch klassenstufe 8</li>
-                    </ul>
-                    <h4>Auf den Frühling Aktionstag im Schulgarten</h4>
-                    <ul><li>Sonnabend, 09.04.2022</li></ul>
-                    <div style="color: orange;"><h4>-Änderung - Schulsporttag im Stadion der Freundschaft Dienstag 24.5.2022</h4></div>div>
-                    <h4>Prüfungstermine</h4>
-                    <ul>
-                        <li>20.05.2022, Englisch (1. Teil – schriftlich)</li>
-                        <li>23.05.2022, Deutsch</li>
-                        <li>0.05.2022, Mathematik</li>
-                        <li>1.06.2022, Biologie</li>
-                        <li>02.06.2022, Physik, Chemie</li>
-                        <li>06.06.2022 – 10.06.2022, Englisch (2. Teil – mündlich)</li>
-                        <li>0.06.2022 – 08.07.2022, Mündliche Prüfungen</li>
-                    </ul>
-                    <h4>Schulentlassungsfeier</h4>
-                    <ul><li>ienstag, 12. Juli 2022, 17:00 Uhr im Großen Lindensaal – Rathaus Markkleeberg
-                    
-                    Die Zeiten der einzelnen Klassen können sich ändern!</li></ul>
-                    <h4>Zeugnisausgabe für die Klassen 5 bis 9
-</h4>
-<ul><li>Juli 2022</li></ul>
-<h4>Sommerferien</h4>
-<ul><li>18.7.2022-6.8.2022</li></ul>
-               
-            </div>
+            <main class="col py-4" w3-include-html="homepage.html" id="replace">
+                NICHTRS
+            </main>
         </div>
+    </div>
 
-    </div><script src="https://cdn.jsdelivr.net/gh/vergissberlin/includeHTML/js/navigate.js"></script>
-    
+
+    <script src="./js/navigate.js"></script>
+
 </body>
 
 </html>
